@@ -122,7 +122,7 @@ server.clientLogic = function(client) {
 	if (client.keyHeld(Elemental.Keycodes.A)) movement.x -= move_speed;
 	if (client.keyHeld(Elemental.Keycodes.D)) movement.x += move_speed;
 
-	if (client.mouseHeld(Elemental.Mousecodes.LEFT)) {
+	if (client.mouseHeld(Elemental.Mousecodes.LEFT) || client.keyHeld(Elemental.Keycodes.SPACE)) {
 		if (Elemental.Helpers.Now() - client.last_shot > shoot_speed) {
 			var step = Elemental.Helpers.StepBetween(client.posn, client.mousePos);
 			var b_movement = Elemental.Vector.Multiply(step, bullet_speed, -1);
