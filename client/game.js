@@ -99,8 +99,6 @@ class Player {
 
 		var correction = calculate_correction(this.posn, this.server_posn);
 		this.posn = Elemental.Vector.Add(this.posn, correction);
-
-		this.collided = false;
 	}
 
 	draw() {
