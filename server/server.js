@@ -3,7 +3,7 @@ const Elemental = require("./elemental_server.js");
 var server = new Elemental.Server(5500, tickrate=60);
 var move_speed = 5;
 var shoot_speed = 0.3;
-var player_radius = 50;
+var player_radius = 55;
 var bullet_bounds = 3000;
 var bullet_speed = 13;
 var barrier_size = 150;
